@@ -14,7 +14,7 @@ if ! exists("g:zora_colors_force_gui")
     let g:zora_colors_force_gui = 0
 endif
 
-if g:zora_colors_force_gui || has("gui_running") || (has("neovim") && &tgc)
+if g:zora_colors_force_gui || has("gui_running") || (has("nvim") && &tgc)
     " GUI color scheme
     hi Normal       gui=none      guifg=#17201b   guibg=#cdd9d5
     hi Visual                                     guibg=#c9c9bd
@@ -72,7 +72,7 @@ if g:zora_colors_force_gui || has("gui_running") || (has("neovim") && &tgc)
     hi GitGutterChange          gui=none        guifg=#f8f166   guibg=#143a3c
     hi GitGutterChangeDelete    gui=none        guifg=#f8f166   guibg=#143a3c
 
-elseif has("neovim") || &t_Co == 256
+elseif has("nvim") || &t_Co == 256
     " 256-color terminal theme
     hi Normal       cterm=none      ctermfg=234 ctermbg=252
     hi Visual       cterm=none                  ctermbg=250
