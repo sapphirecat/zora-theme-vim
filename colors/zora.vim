@@ -67,6 +67,11 @@ if g:zora_colors_force_gui || has("gui_running") || (has("neovim") && &tgc)
     hi Underlined   gui=underline guifg=#2c519f
     hi Error        gui=none      guifg=#fafafa   guibg=#ae2f39
 
+    hi GitGutterAdd             gui=none        guifg=#9ad72f   guibg=#143a3c
+    hi GitGutterDelete          gui=none        guifg=#ce978c   guibg=#143a3c
+    hi GitGutterChange          gui=none        guifg=#f8f166   guibg=#143a3c
+    hi GitGutterChangeDelete    gui=none        guifg=#f8f166   guibg=#143a3c
+
 elseif has("neovim") || &t_Co == 256
     " 256-color terminal theme
     hi Normal       cterm=none      ctermfg=234 ctermbg=252
@@ -119,6 +124,11 @@ elseif has("neovim") || &t_Co == 256
     hi Special      cterm=none      ctermfg=131
     hi Underlined   cterm=underline ctermfg=26
     hi Error        cterm=none      ctermfg=231 ctermbg=95
+
+    hi GitGutterAdd             cterm=none      ctermfg=149 ctermbg=23
+    hi GitGutterDelete          cterm=none      ctermfg=174 ctermbg=23
+    hi GitGutterChange          cterm=none      ctermfg=227 ctermbg=23
+    hi GitGutterChangeDelete    cterm=none      ctermfg=227 ctermbg=23
 
 else
     " 16-color terminal theme (not recommended, but presented for completeness)
