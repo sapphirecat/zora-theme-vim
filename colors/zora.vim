@@ -14,7 +14,7 @@ if ! exists("g:zora_colors_force_gui")
     let g:zora_colors_force_gui = 0
 endif
 
-if g:zora_colors_force_gui || has("gui_running") || (has("nvim") && &tgc)
+if g:zora_colors_force_gui || has("gui_running") || (exists("&tgc") && &tgc)
     " GUI color scheme
     hi Normal       gui=none      guifg=#17201b   guibg=#cdd9d5
     hi Visual                                     guibg=#c9c9bd
