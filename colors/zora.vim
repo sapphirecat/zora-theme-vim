@@ -46,7 +46,7 @@ if g:zora_colors_force_gui || has("gui_running") || (exists("&tgc") && &tgc)
 
     hi DiffAdd                                    guibg=#c3f8ff
     hi DiffChange                                 guibg=#f4bdae
-    hi DiffDelete   gui=none      guifg=#cdd9d5   guibg=#d4ecee
+    hi DiffDelete   gui=none      guifg=#10556b   guibg=#d4ecee
     hi DiffText     gui=bold                      guibg=#f8edf7
 
     hi Pmenu        gui=none      guifg=#4a4a4a   guibg=#95c091
