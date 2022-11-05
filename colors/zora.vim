@@ -184,3 +184,4 @@ else
     hi Error        cterm=none      ctermfg=15  ctermbg=1
 endif
 
+" vim:sts=4:sw=4:et
