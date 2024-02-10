@@ -10,11 +10,18 @@ endif
 let g:colors_name = 'zora'
 set background=light
 
-if ! exists("g:zora_colors_force_gui")
-    let g:zora_colors_force_gui = 0
+if ! exists("g:zora_use_gui_colors")
+    " 1.X compatibility guarantee: recognize deprecated variable name,
+    " renamed in version 1.1.0
+    if exists("g:zora_colors_force_gui")
+        let g:zora_use_gui_colors = g:zora_colors_force_gui
+    else
+        let g:zora_use_gui_colors = 0
+    endif
+
 endif
 
-if g:zora_colors_force_gui || has("gui_running") || (exists("&tgc") && &tgc)
+if g:zora_use_gui_colors || has("gui_running") || (exists("&tgc") && &tgc)
     " GUI color scheme
     hi Normal       gui=none      guifg=#17201b   guibg=#cdd9d5
     hi Visual                                     guibg=#c9c9bd

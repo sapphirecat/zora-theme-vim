@@ -1,6 +1,6 @@
 # zora-theme-vim
 
-An aquatic colorscheme for GVim and 256-color/truecolor terminals.
+An aquatic colorscheme for GVim, neovim, and 256-color/truecolor terminals.
 
 Use it with your favorite **package manager:**
 
@@ -10,8 +10,14 @@ Use it with your favorite **package manager:**
   `git clone https://github.com/sapphirecat/zora-theme-vim.git`
 
 **Or manually:** download the release and put the `colors/zora.vim` file into
-vim's runtime path, typically `~/.vim/colors/zora.vim` (Mac/Linux) or
-`~\vimfiles\colors\zora.vim` (Windows)
+vim’s runtime path, typically `~/.vim/colors/zora.vim` (Mac/Linux) or
+`C:\Users\...\vimfiles\colors\zora.vim` (Windows)
+
+# Configuration
+
+- `let g:zora_use_gui_colors = 1`: always load as a GUI theme.  Normally, the
+  theme sets GUI colors if the GUI is running or the `termguicolors` option is
+  set, and terminal colors otherwise.  Added in v1.1.
 
 # Screenshots
 
@@ -20,8 +26,8 @@ vim's runtime path, typically `~/.vim/colors/zora.vim` (Mac/Linux) or
 
 # Inspiration
 
-This colorscheme is based on the colors of Zora's Domain and the surrounding
-area, in _The Legend of Zelda: Breath of the Wild._
+This colorscheme is based on colors sampled from screenshots of Zora’s Domain
+and the surrounding area, in _The Legend of Zelda: Breath of the Wild._
 
 # License
 
