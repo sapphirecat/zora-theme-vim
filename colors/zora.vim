@@ -2,13 +2,13 @@
 " zora.vim: an aquatic theme, based on screenshots of Zora's Domain in
 " The Legend of Zelda: Breath of the Wild.
 
+set background=light
 highlight clear
 if exists("syntax_on")
     syntax reset
 endif
 
 let g:colors_name = 'zora'
-set background=light
 
 if ! exists("g:zora_use_gui_colors")
     " 1.X compatibility guarantee: recognize deprecated variable name,
